@@ -100,3 +100,12 @@ Check installed extensions:
 
 ```bash
 php -m
+
+# Usage
+php crawl_csp_report.php --sitemap="https://example.com/sitemap.xml"
+
+php crawl_csp_report.php \
+  --sitemap="https://example.com/sitemap.xml" \
+  --out="./out" \
+  --concurrency=10 \
+  --timeout=20
